@@ -13,12 +13,12 @@ const Section1 = () => {
         <section className='sc1'>
             <div className="inner">
                 <div className="img-wrap" data-aos="fade-right">
-                    <img src="/img/ettude.png" alt="img" />
+                    <img src="./img/ettude.png" alt="img" />
                 </div>
                 <div className="t-wrap" data-aos="fade-left">
                     <p className="txt_1">
                         MAKEUP LOOK
-                        <img src="/img/makeup.png" alt="img" />
+                        <img src="./img/makeup.png" alt="img" />
                     </p>
                     <h2 className="con_tit">
                     "What makeup suits<br/> me right now?"

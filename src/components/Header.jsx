@@ -14,7 +14,7 @@ const Header = ({isScrolled, modalOpenClick}) => {
           <Nav />
           <h1 className="logo">
             <a href="#">
-              <img src="./img/logo.png" alt="logo" />
+              <img src={`${import.meta.env.BASE_URL}img/logo.png`} />
             </a>
           </h1>
           <Util />

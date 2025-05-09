@@ -6,7 +6,7 @@ const Section4 = () => {
             <div className="inner">
                 <div className="t-wrap">
                     <div className="star">
-                        <img src="/img/star.png" alt="star" />
+                        <img src="./img/star.png" alt="star" />
                         <h2 className="con_tit">
                             Customer Review
                         </h2>
