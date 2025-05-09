@@ -1,0 +1,211 @@
+.hero {
+    padding: 0;
+    height: auto;
+
+    .inner {
+        display: flex;
+        align-items: center;
+        max-width: 160rem;
+
+        .img-wrap {
+            display: none;
+            /* 기본적으로 숨김 */
+        }
+    }
+
+    .swiper-slide {
+        height: 95rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+
+        .t-wrap {
+            color: #252525;
+
+            .txt {
+                color: #252525;
+            }
+        }
+
+        &.hero_sl_1 {
+            background-image: url('/img/slider1.png');
+            background-position: center right;
+        }
+
+        &.hero_sl_2 {
+            background-image: url('/img/slider2.png');
+            background-position: center right;
+        }
+
+        &.hero_sl_3 {
+            background-image: url('/img/slider3.png');
+            background-position: center right;
+        }
+
+        &.hero_sl_4 {
+            background-image: url('/img/slider4.png');
+            background-position: top;
+        }
+    }
+
+    .hero_nav {
+        position: absolute;
+        z-index: 3;
+        bottom: 8.7rem;
+        left: calc(50% - 80rem);
+        display: flex;
+        gap: 2rem;
+
+        .arr_prev,
+        .arr_next {
+            width: 6rem;
+            height: 1.7rem;
+        }
+
+        .arr_prev {
+            background: url('/img/icon_main_ban_arrow_prev.png');
+        }
+
+        .arr_next {
+            background: url('/img/icon_main_ban_arrow_next.png');
+        }
+
+        .swiper-pagination {
+            position: relative;
+            width: 5rem;
+            height: 5rem;
+            color: #252525;
+            font-size: 0;
+
+            &:after {
+                display: block;
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 50px;
+                background-color: #252525;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+
+            .swiper-pagination-current {
+                position: absolute;
+                font-size: 2.2rem;
+                top: 0;
+                left: 0;
+            }
+
+            .swiper-pagination-total {
+                position: absolute;
+                font-size: 2.2rem;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1400px) {
+        .swiper-slide {
+            height: 80rem;
+
+            &.hero_sl_1 {
+                background-size: contain;
+                background-position: right bottom;
+                background-color: rgba(255, 240, 242, 1);
+            }
+
+            &.hero_sl_2 {
+                background-size: contain;
+                background-position: right bottom;
+                background-color: #f1d5e3;
+            }
+
+            &.hero_sl_3 {
+                background-size: contain;
+                background-position: right bottom;
+                background-color: #9ed5fc;
+            }
+
+            &.hero_sl_4 {
+                background-size: contain;
+                background-position: right bottom;
+                background-color: #c9f2ff;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1111px) {
+        .swiper-slide {
+            background-image: none !important;
+            /* 모든 배경 이미지 강제 제거 */
+            background-color: inherit;
+            background-position: top;
+
+            /* 슬라이드별 배경 이미지 제거 */
+            &.hero_sl_1,
+            &.hero_sl_2,
+            &.hero_sl_3,
+            &.hero_sl_4 {
+                background-image: none;
+                /* 명시적으로 제거 */
+            }
+
+            .img-wrap {
+                display: block;
+                /* mobileImg 표시 */
+                width: 100%;
+                height: auto;
+                position: absolute;
+                top: 10rem;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    /* 이미지 비율 유지 */
+                }
+            }
+
+            &::before {
+                display: block;
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 15rem;
+                width: 100%;
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0), #fff);
+                z-index: 4;
+            }
+
+            .t-wrap {
+                position: absolute;
+                left: 7.2vw;
+                bottom: 14.5rem;
+            }
+        }
+
+        .hero_nav {
+            left: 7.2vw;
+            bottom: 3.9rem;
+
+            .arr_prev {
+                background-image: url('/img/icon_main_ban_arrow_prev.png');
+            }
+
+            .arr_next {
+                background-image: url('/img/icon_main_ban_arrow_next.png');
+            }
+
+            .swiper-pagination {
+                color: #252525;
+
+                &:after {
+                    background-color: #252525;
+                }
+            }
+        }
+    }
+}
