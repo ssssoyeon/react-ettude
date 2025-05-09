@@ -29,22 +29,22 @@
         }
 
         &.hero_sl_1 {
-            background-image: url('/img/slider1.png');
+            background-image: url('./img/slider1.png');
             background-position: center right;
         }
 
         &.hero_sl_2 {
-            background-image: url('/img/slider2.png');
+            background-image: url('./img/slider2.png');
             background-position: center right;
         }
 
         &.hero_sl_3 {
-            background-image: url('/img/slider3.png');
+            background-image: url('./img/slider3.png');
             background-position: center right;
         }
 
         &.hero_sl_4 {
-            background-image: url('/img/slider4.png');
+            background-image: url('./img/slider4.png');
             background-position: top;
         }
     }
@@ -64,11 +64,11 @@
         }
 
         .arr_prev {
-            background: url('/img/icon_main_ban_arrow_prev.png');
+            background: url('./img/icon_main_ban_arrow_prev.png');
         }
 
         .arr_next {
-            background: url('/img/icon_main_ban_arrow_next.png');
+            background: url('./img/icon_main_ban_arrow_next.png');
         }
 
         .swiper-pagination {
@@ -192,11 +192,11 @@
             bottom: 3.9rem;
 
             .arr_prev {
-                background-image: url('/img/icon_main_ban_arrow_prev.png');
+                background-image: url('./img/icon_main_ban_arrow_prev.png');
             }
 
             .arr_next {
-                background-image: url('/img/icon_main_ban_arrow_next.png');
+                background-image: url('./img/icon_main_ban_arrow_next.png');
             }
 
             .swiper-pagination {

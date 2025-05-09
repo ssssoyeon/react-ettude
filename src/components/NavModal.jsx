@@ -10,7 +10,7 @@ const NavModal = ({ modalOpen, modalOpenClick }) => {
             <div className="inner">
                 <Util />
                 <a href="#" onClick={modalOpenClick} className='nav-modal-close'>
-                    <img src="/img/icon_search_close_m.png" alt="" />
+                    <img src="./img/icon_search_close_m.png" alt="" />
                 </a>
             </div>
             <Nav />

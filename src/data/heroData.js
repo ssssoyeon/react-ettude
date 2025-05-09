@@ -6,7 +6,7 @@ const heroData = [
         btnText: 'SHOP NOW',
         btnColor: '', 
         className: 'hero_sl_1',
-        mobileImg: '/img/mo_main0.png'
+        mobileImg: './img/mo_main0.png'
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const heroData = [
         btnText: 'SHOP NOW',
         btnColor: '',
         className: 'hero_sl_2',
-        mobileImg: '/img/mo_main02.png'
+        mobileImg: './img/mo_main02.png'
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const heroData = [
         btnText: 'SHOP NOW',
         btnColor: '',
         className: 'hero_sl_3',
-        mobileImg: '/img/mo_main03.png'
+        mobileImg: './img/mo_main03.png'
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const heroData = [
         btnText: 'SHOP NOW',
         btnColor: '',
         className: 'hero_sl_4',
-        mobileImg: '/img/mo_main3.png'
+        mobileImg: './img/mo_main3.png'
     }
 
 ]
